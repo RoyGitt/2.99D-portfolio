@@ -4,7 +4,6 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { services } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
 import SectionWrapper from "../hoc/SectionWrapper";
 
 const About = () => {
@@ -23,7 +22,10 @@ const About = () => {
 
     return (
       <Tilt className="xs:w-[250px] min-h-[280px] w-full">
-        <motion.div className="w-full h-full green-pink-gradient rounded-[20px] p-[1px]">
+        <motion.div
+          className="w-full h-full green-pink-gradient rounded-[20px] p-[1px]"
+          variants={cardVariants}
+        >
           <div
             options={defaultOptions}
             className=" w-full h-full flex flex-col justify-evenly items-center rounded-[20px] py-5 px-12 bg-tertiary  "
@@ -38,11 +40,47 @@ const About = () => {
     );
   };
 
+  const cardVariants = {
+    initial: { x: -200, opacity: 0 },
+    slideRight: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.3,
+      },
+    },
+  };
+
+  const textVariants = {
+    initial: { x: -20, opacity: 0 },
+    slideInText: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.3,
+      },
+    },
+  };
+
   return (
     <>
-      <motion.div>
-        <p className={`${styles.sectionSubText}`}>Introduction</p>
-        <h2 className={`${styles.sectionHeadText}`}>Overview</h2>
+      <motion.div
+        variants={textVariants}
+        initial="initial"
+        whileInView="slideInText"
+      >
+        <motion.p
+          className={`${styles.sectionSubText}`}
+          variants={textVariants}
+        >
+          Introduction
+        </motion.p>
+        <motion.h2
+          className={`${styles.sectionHeadText}`}
+          variants={textVariants}
+        >
+          Overview
+        </motion.h2>
       </motion.div>
       <motion.p
         className="mt-4 text-secondary text-[24px] max-w-[1440px] leading-[40px] 
@@ -57,11 +95,16 @@ const About = () => {
         that value­s speed and efficie­ncy. My goal is to contribute my skills
         and expertise­ to drive success in the te­am.
       </motion.p>
-      <div className="flex flex-wrap gap-10 mt-20">
+      <motion.div
+        className="flex flex-wrap gap-10 mt-20"
+        variants={cardVariants}
+        initial="initial"
+        whileInView="slideRight"
+      >
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
-      </div>
+      </motion.div>
     </>
   );
 };

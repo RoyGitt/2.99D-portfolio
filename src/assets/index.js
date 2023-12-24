@@ -29,6 +29,8 @@ import truos from "./projects/truos.png";
 import healthian from "./projects/healthian.png";
 import inditours from "./projects/inditours.png";
 import traveller from "./projects/traveller.png";
+import port from "./projects/port.png";
+import nike from "./projects/nike.png";
 
 import stars from "./stars.png";
 import planets from "./planets.png";
@@ -66,4 +68,6 @@ export {
   healthian,
   inditours,
   traveller,
+  port,
+  nike,
 };

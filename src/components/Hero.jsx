@@ -58,7 +58,9 @@ const Hero = () => {
           </motion.div>
         </motion.div>
       </div>
+
       <ComputerCanvas />
+
       <div className="absolute bottom-20 w-full">
         <a href="#about">
           <div className="w-[35px] h-[64px] mx-auto  rounded-3xl border-4 border-white flex p-2">

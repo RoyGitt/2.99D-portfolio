@@ -1,11 +1,21 @@
 import React from "react";
 import { styles } from "../styles";
 import { motion } from "framer-motion";
-import { fadeIn, textVariant } from "../utils/motion";
 import SectionWrapper from "../hoc/SectionWrapper";
 import { projects } from "../constants";
 import { Tilt } from "react-tilt";
 import { SiGithub, SiNetlify } from "react-icons/si";
+
+const cardVariants = {
+  initial: { x: -200, opacity: 0 },
+  slideRight: {
+    x: 0,
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+    },
+  },
+};
 
 const ProjectCard = ({
   image,
@@ -17,7 +27,7 @@ const ProjectCard = ({
   link,
 }) => {
   return (
-    <motion.div>
+    <motion.div variants={cardVariants}>
       <Tilt
         options={{ max: 45, scale: 1, speed: 450 }}
         className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
@@ -62,11 +72,36 @@ const ProjectCard = ({
 };
 
 const Work = () => {
+  const textVariants = {
+    initial: { x: -20, opacity: 0 },
+    slideInText: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.3,
+      },
+    },
+  };
+
   return (
     <>
-      <motion.div>
-        <p className={`${styles.sectionSubText}`}>Introduction</p>
-        <h2 className={`${styles.sectionHeadText}`}>Overview</h2>
+      <motion.div
+        variants={textVariants}
+        initial="initial"
+        whileInView="slideInText"
+      >
+        <motion.p
+          variants={textVariants}
+          className={`${styles.sectionSubText}`}
+        >
+          Introduction
+        </motion.p>
+        <motion.h2
+          variants={textVariants}
+          className={`${styles.sectionHeadText}`}
+        >
+          Overview
+        </motion.h2>
       </motion.div>
       <motion.p
         className="mt-3 text-secondary text-[24px] max-w-7xl leading-[40px] 
@@ -78,13 +113,18 @@ const Work = () => {
         complex problems, work with different technologies, and manage projects
         effectively.
       </motion.p>
-      <div className="mt-20 flex flex-wrap gap-7">
+      <motion.div
+        className="mt-20 flex flex-wrap gap-7"
+        variants={cardVariants}
+        initial="initial"
+        whileInView="slideRight"
+      >
         {projects.map((project, index) => {
           return (
             <ProjectCard key={`project-${index}`} index={index} {...project} />
           );
         })}
-      </div>
+      </motion.div>
     </>
   );
 };

@@ -1,6 +1,5 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { textVariant } from "../utils/motion";
 import { styles } from "../styles";
 import SectionWrapper from "../hoc/SectionWrapper";
 import {
@@ -67,17 +66,19 @@ const Experience = () => {
   return (
     <>
       <motion.div>
-        <p className={`${styles.sectionSubText}`}> What I have done so far</p>
+        <p className={`${styles.sectionSubText}`}>MY VERY SHORT JOURNEY</p>
         <h2 className={`${styles.sectionHeadText}`}> Work Experience.</h2>
       </motion.div>
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>
-          {experiences.map((experience, index) => (
-            <ExperienceCard
-              key={`experience ${index}`}
-              experience={experience}
-            />
-          ))}
+          {experiences.map((experience, index) => {
+            return (
+              <ExperienceCard
+                key={`experience ${index}`}
+                experience={experience}
+              />
+            );
+          })}
         </VerticalTimeline>
       </div>
     </>

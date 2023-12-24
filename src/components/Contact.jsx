@@ -23,9 +23,17 @@ const Contact = () => {
 
   const submitHandler = (e) => {};
 
+  const socialVariants = {
+    
+  };
+
   return (
     <section className=" flex sm:flex-row flex-col  gap-10">
-      <div className="flex-[1] bg-black-100 p-8 rounded-2xl">
+      <motion.div
+        className="flex-[1] bg-black-100 p-8 rounded-2xl"
+        initial={{ scale: 0 }}
+        whileInView={{ scale: 1 }}
+      >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact.</h3>
 
@@ -73,7 +81,7 @@ const Contact = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
-      </div>
+      </motion.div>
       <div className="flex sm:items-center justify-center">
         <ul className="flex sm:flex-col flex-row justify-between gap-10">
           <motion.li whileHover={{ rotate: "360deg", scale: 1.1 }}>

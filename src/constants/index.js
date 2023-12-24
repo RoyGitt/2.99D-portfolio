@@ -12,6 +12,8 @@ import {
   healthian,
   inditours,
   traveller,
+  nike,
+  port,
 } from "../assets";
 
 export const navLinks = [
@@ -131,7 +133,7 @@ const experiences = [
     company_name: "Meliodus Workplace",
     icon: meliodus,
     iconBg: "#111",
-    date: "June 2022 - August 2022 (3 months cotractual)",
+    date: "June 2022 - August 2022 (3 months contractual)",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -192,15 +194,15 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: sharebuzz,
-    sourceCode: "https://github.com/RoyGitt/sharebuzz",
+    image: port,
+    sourceCode: "https://github.com/RoyGitt/portfolio",
     link: "https://sharebuzz.netlify.app",
   },
   {
-    name: "Share Buzz",
-    type: "a social media website",
+    name: "Nike",
+    type: "a cool landing page",
     description:
-      "A social media website centered around image sharing. It is inspired from many popular social media websites.",
+      "Dynamic Nike landing page, blending innovation and style. Captivating visuals, seamless navigation. Elevate your experience, step into excellence.",
     tags: [
       {
         name: "react",
@@ -219,9 +221,9 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: sharebuzz,
-    sourceCode: "https://github.com/RoyGitt/sharebuzz",
-    link: "https://sharebuzz.netlify.app",
+    image: nike,
+    sourceCode: "https://github.com/RoyGitt/nike-tailwind",
+    link: "https://polite-macaron-79f9f6.netlify.app/",
   },
   {
     name: "BlogR",
