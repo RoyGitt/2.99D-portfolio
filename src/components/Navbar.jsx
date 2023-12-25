@@ -5,7 +5,7 @@ import { AnimatePresence, motion } from "framer-motion";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
-  const [paddingX, setPaddingX] = useState(false);
+  const [widthX, setWidthX] = useState(false);
 
   const handleScroll = () => {
     setScrollPosition(window.scrollY);
@@ -20,18 +20,22 @@ const Navbar = () => {
   }, []);
 
   useEffect(() => {
-    if (scrollPosition > 300) {
-      setPaddingX(true);
+    if (scrollPosition > 500) {
+      setWidthX(true);
     } else {
-      setPaddingX(false);
+      setWidthX(false);
     }
   }, [scrollPosition]);
 
   return (
-    <header className="fixed top-0 w-full bg-black  z-50 py-[0.2rem] sm:px-4 px-0">
+    <header
+      className={`fixed top-0 w-full ${
+        widthX == "1280px" ? "bg-transparent" : "bg-transparent"
+      }  z-50 py-[0.2rem] sm:px-4 px-0`}
+    >
       <motion.nav
         animate={{
-          maxWidth: paddingX ? "1280px" : "1440px",
+          maxWidth: widthX ? "1280px" : "1440px",
         }}
         className="sm:flex hidden py-3 items-center justify-between mx-auto max-w-[1440px]"
       >

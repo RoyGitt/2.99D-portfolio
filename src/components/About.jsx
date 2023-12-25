@@ -28,7 +28,7 @@ const About = () => {
         >
           <div
             options={defaultOptions}
-            className=" w-full h-full flex flex-col justify-evenly items-center rounded-[20px] py-5 px-12 bg-tertiary  "
+            className=" w-full h-full flex flex-col justify-evenly items-center rounded-[20px] py-5 px-12 bg-black  "
           >
             <img src={icon} alt={`${title} icon`} className="w-16 h-16" />
             <h3 className="text-white text-[20px] fonts-bold text-center">
@@ -46,7 +46,7 @@ const About = () => {
       x: 0,
       opacity: 1,
       transition: {
-        staggerChildren: 0.3,
+        staggerChildren: 0.1,
       },
     },
   };

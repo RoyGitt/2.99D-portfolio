@@ -7,7 +7,7 @@ const Stars = (props) => {
   const ref = useRef();
 
   const [sphere] = useState(() =>
-    random.inSphere(new Float32Array(1000), { radius: 20 })
+    random.inSphere(new Float32Array(5000), { radius: 1.2 })
   );
 
   useFrame((state, delta) => {
@@ -28,7 +28,7 @@ const Stars = (props) => {
         <PointMaterial
           transaprent
           color="#ffffff"
-          size={0.02}
+          size={0.002}
           sizeAttenuation={true}
           depthWrite={false}
         />
@@ -39,8 +39,8 @@ const Stars = (props) => {
 
 const StarsCanvas = () => {
   return (
-    <div className="w-full h-auto absolute inset-0 z-[-1] bg-black">
-      <Canvas className="w-full h-auto absolute inset-0 z-[-1] hidden sm:block">
+    <div className="w-full h-auto fixed inset-0 z-[-1] ">
+      <Canvas camera={{ position: [0, 0, 1] }}>
         <Suspense fallback={null} camera={{ position: [0, 0, 1] }}>
           <Stars />
         </Suspense>

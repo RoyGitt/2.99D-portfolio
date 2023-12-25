@@ -19,42 +19,24 @@ html {
 }
 body {
   transition: all 0.2s;
+  overflow-x: hidden;
+  background-color: #000000;
 }
 
-.hash-span {
-  margin-top: -100px;
-  padding-bottom: 100px;
-  display: block;
-}
-
-.black-gradient {
-  background: #000000; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #434343,
-    #000000
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #434343,
-    #000000
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
-
-.violet-gradient {
-  background: #804dee;
-  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
+.purple-gradient {
+  background: #c026d3;
+  background: linear-gradient(-90deg, #c026d3 0%, rgba(60, 51, 80, 0) 100%);
   background: -webkit-linear-gradient(
     -90deg,
-    #804dee 0%,
+    #c026d3 0%,
     rgba(60, 51, 80, 0) 100%
   );
 }
 
 .green-pink-gradient {
   background: "#00cea8";
-  background: linear-gradient(90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
-  background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
+  background: linear-gradient(90.13deg, #fff 1.9%, #c026d3 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #fff 1.9%, #c026d3 97.5%);
 }
 
 .orange-text-gradient {
@@ -122,10 +104,6 @@ body {
   -webkit-text-fill-color: transparent;
 }
 
-.bg-gradient {
-  background-image: linear-gradient(110.1deg, #1e0253 44.2%, #c637a0 138.2%);
-}
-
 nav ul li {
   list-style: none;
   margin: 0 15px;
@@ -157,14 +135,14 @@ nav ul li a::before {
 
 nav ul li a:hover::before {
   transform: scale(1);
-  box-shadow: 0 0 15px #915eff;
+  box-shadow: 0 0 15px #c026d3;
 }
 
 nav ul li a:hover {
   color: #fff;
-  box-shadow: 0 0 10px #915eff;
-  text-shadow: 0 0 10px #915eff, 0 0 20px #915eff, 0 0 30px #915eff,
-    0 0 40px #915eff;
+  box-shadow: 0 0 10px #c026d3;
+  text-shadow: 0 0 10px #c026d3, 0 0 20px #c026d3, 0 0 30px #c026d3,
+    0 0 40px #c026d3;
 }
 
 .glitch {
@@ -194,7 +172,7 @@ nav ul li a:hover {
 .glitch:after {
   animation: glitch-it 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both
     infinite;
-  color: #ff00ff;
+  color: #c026d3;
   z-index: -2;
 }
 
@@ -220,7 +198,7 @@ nav ul li a:hover {
 }
 
 .icon-shadow {
-  box-shadow: 0 0 20px #c637a0, 0 0 30px #c637a0, 0 0 40px #c637a0;
+  box-shadow: 0 0 20px #c026d3, 0 0 30px #c026d3, 0 0 40px #c026d3;
 }
 
 .glow {
@@ -235,8 +213,8 @@ nav ul li a:hover {
       0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
   }
   to {
-    text-shadow: 0 0 20px #c637a0, 0 0 30px #c637a0, 0 0 40px #c637a0,
-      0 0 50px #c637a0, 0 0 60px #c637a0, 0 0 70px #c637a0, 0 0 80px #c637a0;
+    text-shadow: 0 0 20px #c026d3, 0 0 30px #c026d3, 0 0 40px #c026d3,
+      0 0 50px #c026d3, 0 0 60px #c637a0, 0 0 70px #c026d3, 0 0 80px #c026d3;
   }
 }
 
@@ -248,6 +226,7 @@ nav ul li a:hover {
   position: absolute;
   top: 0;
   z-index: 4;
+  filter: grayscale(100%);
 }
 
 .planets {
@@ -258,6 +237,7 @@ nav ul li a:hover {
   position: absolute;
   top: 0;
   z-index: 2;
+  filter: grayscale(100%);
 }
 
 .stars {
@@ -268,4 +248,8 @@ nav ul li a:hover {
   position: absolute;
   top: 0;
   z-index: 1;
+}
+
+.shadow-white-right {
+  box-shadow: 4px 4px 10px 0px #fff;
 }

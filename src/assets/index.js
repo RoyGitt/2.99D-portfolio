@@ -32,12 +32,12 @@ import traveller from "./projects/traveller.png";
 import port from "./projects/port.png";
 import nike from "./projects/nike.png";
 
-import stars from "./stars.png";
 import planets from "./planets.png";
 import mountains from "./mountains.png";
 
+import blackhole from "./blackhole.webm";
+
 export {
-  stars,
   planets,
   mountains,
   logo,
@@ -70,4 +70,5 @@ export {
   traveller,
   port,
   nike,
+  blackhole,
 };

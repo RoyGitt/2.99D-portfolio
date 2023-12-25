@@ -1,6 +1,6 @@
 This favicon was generated using the following font:
 
-- Font Title: Lato
-- Font Author: Copyright (c) 2010-2011 by tyPoland Lukasz Dziedzic (team@latofonts.com) with Reserved Font Name "Lato". Licensed under the SIL Open Font License, Version 1.1.
-- Font Source: http://fonts.gstatic.com/s/lato/v24/S6u9w4BMUTPHh50Xew-FGC_p9dw.ttf
+- Font Title: Poppins
+- Font Author: Copyright 2020 The Poppins Project Authors (https://github.com/itfoundry/Poppins)
+- Font Source: http://fonts.gstatic.com/s/poppins/v20/pxiEyp8kv8JHgFVrFJDUc1NECPY.ttf
 - Font License: SIL Open Font License, 1.1 (http://scripts.sil.org/OFL))

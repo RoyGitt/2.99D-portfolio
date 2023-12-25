@@ -15,12 +15,12 @@ const App = () => {
     <>
       <Navbar />
       <main>
+        <StarsCanvas />
         <div className="relative z-0 ">
           <Hero />
-          <Background />
         </div>
         <Parallax text="What i do?" />
-        <div className="bg-gradient">
+        <div>
           <About />
           <Experience />
           <Tech />
@@ -29,7 +29,6 @@ const App = () => {
         </div>
         <div className="relative z-0">
           <Contact />
-          <StarsCanvas />
         </div>
       </main>
       <Footer />

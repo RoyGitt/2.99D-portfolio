@@ -6,10 +6,10 @@ const Footer = () => {
 
   return (
     <footer>
-      <p className="text-center p-6 bg-tertiary text-2xl flex gap-3 justify-center items-center">
+      <p className="text-center p-6 bg-black text-2xl flex gap-3 justify-center items-center">
         No rights Reserved.{" "}
         <motion.div
-          className="text-7xl"
+          className="text-5xl"
           whileHover={{ rotate: "360deg" }}
           onMouseEnter={() => {
             setEmoji("😁");

@@ -30,7 +30,7 @@ const ProjectCard = ({
     <motion.div variants={cardVariants}>
       <Tilt
         options={{ max: 45, scale: 1, speed: 450 }}
-        className="bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full"
+        className="bg-black shadow-small  p-5 rounded-2xl sm:w-[360px] w-full min-h-[28rem] "
       >
         <div className="relative w-full mb-5 h-[190px] ">
           <img

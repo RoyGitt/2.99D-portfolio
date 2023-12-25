@@ -17,7 +17,7 @@ const Parallax = (props) => {
   return (
     <section
       ref={ref}
-      className="h-screen relative overflow-hidden bg-black hidden sm:block"
+      className="h-screen relative overflow-hidden hidden sm:block"
     >
       <motion.h1
         className="text-7xl sm:text-[7rem] text-bold leading-[90vh] text-center z-[3] capitalize drop-shadow-lg glow"
@@ -31,10 +31,6 @@ const Parallax = (props) => {
       <motion.div
         className="planets bg-contain sm:bg-cover bg-no-repeat"
         style={{ y: yPlanets }}
-      ></motion.div>
-      <motion.div
-        className="stars bg-contain sm:bg-cover "
-        style={{ x: yStars }}
       ></motion.div>
     </section>
   );
