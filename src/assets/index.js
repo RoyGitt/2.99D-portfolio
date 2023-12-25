@@ -35,8 +35,6 @@ import nike from "./projects/nike.png";
 import planets from "./planets.png";
 import mountains from "./mountains.png";
 
-import blackhole from "./blackhole.webm";
-
 export {
   planets,
   mountains,
@@ -70,5 +68,4 @@ export {
   traveller,
   port,
   nike,
-  blackhole,
 };
