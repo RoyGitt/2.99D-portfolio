@@ -15,7 +15,10 @@ const Parallax = (props) => {
   const yPlanets = useTransform(scrollYProgress, [0, 1], ["0", "250%"]);
 
   return (
-    <section ref={ref} className="h-screen relative overflow-hidden bg-black">
+    <section
+      ref={ref}
+      className="h-screen relative overflow-hidden bg-black hidden sm:block"
+    >
       <motion.h1
         className="text-7xl sm:text-[7rem] text-bold leading-[90vh] text-center z-[3] capitalize drop-shadow-lg glow"
         style={{ y: ytext }}
