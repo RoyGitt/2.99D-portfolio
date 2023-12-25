@@ -1,4 +1,3 @@
-import { blackhole } from "../assets";
 import { styles } from "../styles";
 import ComputerCanvas from "./canvas/ComputerCanvas";
 

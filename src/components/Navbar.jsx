@@ -28,11 +28,7 @@ const Navbar = () => {
   }, [scrollPosition]);
 
   return (
-    <header
-      className={`fixed top-0 w-full ${
-        widthX == "1280px" ? "bg-transparent" : "bg-transparent"
-      }  z-50 py-[0.2rem] sm:px-4 px-0`}
-    >
+    <header className="fixed top-0 bg-black w-full z-50 py-[0.2rem] sm:px-4 px-0">
       <motion.nav
         animate={{
           maxWidth: widthX ? "1280px" : "1440px",
@@ -91,7 +87,7 @@ const Navbar = () => {
           </motion.li>
         </motion.ul>
       </motion.nav>
-      <nav className="sm:hidden flex bg-primary  py-3 px-6 items-center justify-between">
+      <nav className="sm:hidden flex bg-black  py-3 px-6 items-center justify-between">
         <div className="w-[45px] mr-4">
           <img
             className="w-full h-full object-cover"

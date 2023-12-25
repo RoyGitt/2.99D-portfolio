@@ -6,7 +6,6 @@ import Tech from "./components/Tech";
 import Work from "./components/Work";
 import Contact from "./components/Contact";
 import StarsCanvas from "./components/canvas/StarsCanvas";
-import { Background } from "./components/Hero";
 import Parallax from "./components/Parallax";
 import Footer from "./components/Footer";
 
