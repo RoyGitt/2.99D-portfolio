@@ -19,7 +19,7 @@ const Stars = (props) => {
     <group rotation={[0, 0, Math.PI / 4]}>
       <Points
         ref={ref}
-        scale={20}
+        scale={1}
         positions={sphere}
         stride={3}
         frustumCulled
@@ -27,7 +27,7 @@ const Stars = (props) => {
       >
         <PointMaterial
           transaprent
-          color="#f272c8"
+          color="#ffffff"
           size={0.02}
           sizeAttenuation={true}
           depthWrite={false}

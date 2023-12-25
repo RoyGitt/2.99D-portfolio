@@ -1,6 +1,5 @@
 import { useScroll, useTransform } from "framer-motion";
 import React, { useRef } from "react";
-import { mountains, planets, stars } from "../assets";
 import { motion } from "framer-motion";
 
 const Parallax = (props) => {

@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { logo, menu, close } from "../assets";
-import { navLinks } from "../constants";
 import { AnimatePresence, motion } from "framer-motion";
 
 const Navbar = () => {

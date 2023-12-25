@@ -1,6 +1,5 @@
 import { styles } from "../styles";
 import ComputerCanvas from "./canvas/ComputerCanvas";
-import Typewriter from "typewriter-effect";
 
 import { motion } from "framer-motion";
 

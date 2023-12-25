@@ -2,7 +2,6 @@ import React from "react";
 
 import { Html, useProgress } from "@react-three/drei";
 import RotateLoader from "react-spinners/RotateLoader";
-import { PacmanLoader } from "react-spinners";
 
 const CanvasLoader = () => {
   const override = {
