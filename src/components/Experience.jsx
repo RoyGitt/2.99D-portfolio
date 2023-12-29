@@ -63,11 +63,37 @@ const ExperienceCard = ({
   );
 };
 const Experience = () => {
+  const textVariants = {
+    initial: { x: -20, opacity: 0 },
+    slideInText: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.3,
+      },
+    },
+  };
+
   return (
     <>
-      <motion.div>
-        <p className={`${styles.sectionSubText}`}>MY VERY SHORT JOURNEY</p>
-        <h2 className={`${styles.sectionHeadText}`}> Work Experience.</h2>
+      <motion.div
+        variants={textVariants}
+        initial="initial"
+        whileInView="slideInText"
+      >
+        <motion.p
+          className={`${styles.sectionSubText}`}
+          variants={textVariants}
+        >
+          MY VERY SHORT JOURNEY
+        </motion.p>
+        <motion.h2
+          className={`${styles.sectionHeadText}`}
+          variants={textVariants}
+        >
+          {" "}
+          Work Experience.
+        </motion.h2>
       </motion.div>
       <div className="mt-20 flex flex-col">
         <VerticalTimeline>

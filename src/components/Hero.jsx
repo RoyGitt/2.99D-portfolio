@@ -1,7 +1,7 @@
 import { styles } from "../styles";
 import ComputerCanvas from "./canvas/ComputerCanvas";
 
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Hero = () => {
   const textVariants = {
@@ -48,8 +48,22 @@ const Hero = () => {
             </motion.div>
           </motion.div>
         </div>
-
         <ComputerCanvas />
+        <div className="absolute left-[46%] bottom-[10rem] translate-x-[-51%] translate-y-[-50%] sm:hidden">
+          <div className="w-7 h-12 border-2 border-white rounded-xl absolute flex items-start p-2 justify-center">
+            <motion.div
+              animate={{
+                y: [0, 13, 0],
+              }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+              className="w-3 h-3 bg-white rounded-full absolute"
+            />
+          </div>
+        </div>
       </section>
     </>
   );

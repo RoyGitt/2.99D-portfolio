@@ -127,7 +127,7 @@ const Navbar = () => {
               initial={{ scale: 0 }}
               animate={{ scale: 1 }}
               exit={{ scale: 0 }}
-              className="absolute w-2/4 rounded-lg shadow-lg top-20 right-5 px-2 py-4 bg-slate-800 text-white  flex flex-col gap-5"
+              className="absolute w-2/4 rounded-lg shadow-lg top-20 right-5 px-2 py-4 bg-[rgba(255,255,255,0.2)] text-white  flex flex-col gap-5 backdrop-blur-[4px]"
             >
               <motion.li whileTap={{ scale: 0.9 }}>
                 <a href="#about">About</a>

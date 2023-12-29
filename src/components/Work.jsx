@@ -44,11 +44,11 @@ const ProjectCard = ({
           <div className="flex justify-between items-center">
             <h3 className="text-white font-bold text-[24px] mb-1">{name}</h3>
             <div className=" flex gap-5">
-              <a href={link} className="pointer">
+              <a href={link} target="_blank" className="pointer">
                 <SiNetlify size={25} />
               </a>
               {sourceCode && (
-                <a href={sourceCode} className="pointer">
+                <a href={sourceCode} target="_blank" className="pointer">
                   <SiGithub size={25} />
                 </a>
               )}
@@ -125,6 +125,9 @@ const Work = () => {
           );
         })}
       </motion.div>
+      <h2 className="text-center mt-20 font-bold text-slate-300">
+        For legal reasons some repos are private 🌚
+      </h2>
     </>
   );
 };

@@ -146,25 +146,18 @@ const experiences = [
 const projects = [
   {
     name: "Share Buzz",
-    type: "a social media website",
+    type: "a social media webapp",
     description:
       "A social media website centered around image sharing. It is inspired from many popular social media websites.",
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        name: "react.js",
       },
       {
-        name: "sanity",
-        color: "green-text-gradient",
+        name: "sanity.io",
       },
       {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "framer-motion",
-        color: "pink-text-gradient",
+        name: "tailwind CSS",
       },
     ],
     image: sharebuzz,
@@ -178,25 +171,21 @@ const projects = [
       "Passionate creator showcasing diverse projects, merging innovation with creativity. Explore my portfolio for a visual journey into my work.",
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "sanity",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        name: "react.js",
       },
       {
         name: "framer-motion",
-        color: "pink-text-gradient",
+      },
+      {
+        name: "tailwind CSS",
+      },
+      {
+        name: "react-three-fibre",
       },
     ],
     image: port,
     sourceCode: "https://github.com/RoyGitt/portfolio",
-    link: "https://sharebuzz.netlify.app",
+    link: "https://royaran.netlify.app/",
   },
   {
     name: "Nike",
@@ -205,20 +194,13 @@ const projects = [
       "Dynamic Nike landing page, blending innovation and style. Captivating visuals, seamless navigation. Elevate your experience, step into excellence.",
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "sanity",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
+        name: "react.js",
       },
       {
         name: "framer-motion",
-        color: "pink-text-gradient",
+      },
+      {
+        name: "tailwind CSS",
       },
     ],
     image: nike,
@@ -227,26 +209,23 @@ const projects = [
   },
   {
     name: "BlogR",
-    type: "a blog website",
+    type: "a blog webapp",
     description:
       "Discover the power of JavaScript and Next.js with my practical blogs, unlocking endless possibilities for web development",
     tags: [
       {
-        name: "react",
-        color: "blue-text-gradient",
+        name: "next.js",
       },
       {
-        name: "restapi",
-        color: "green-text-gradient",
+        name: "react-markdown",
       },
       {
-        name: "scss",
-        color: "pink-text-gradient",
+        name: "rest-api",
       },
     ],
     image: blog,
-    sourceCode: "https://github.com/",
-    kink: "#",
+    sourceCode: "https://github.com/RoyGitt/blog-app",
+    link: "https://statuesque-licorice-c23cb0.netlify.app/",
   },
   {
     name: "Carat & Cents",
@@ -255,16 +234,13 @@ const projects = [
     type: "a frontend website for jewelers",
     tags: [
       {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
+        name: "html",
       },
       {
         name: "css",
-        color: "pink-text-gradient",
+      },
+      {
+        name: "javascript",
       },
     ],
     image: caratcents,
@@ -277,16 +253,13 @@ const projects = [
     type: "a frontend website for tech products.",
     tags: [
       {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
+        name: "html",
       },
       {
         name: "css",
-        color: "pink-text-gradient",
+      },
+      {
+        name: "javascript",
       },
     ],
     image: truos,
@@ -299,16 +272,13 @@ const projects = [
     type: "a frontend website for restaurateurs.",
     tags: [
       {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
+        name: "html",
       },
       {
         name: "css",
-        color: "pink-text-gradient",
+      },
+      {
+        name: "javascript",
       },
     ],
     image: healthian,
@@ -322,16 +292,13 @@ const projects = [
     type: "a frontend website for travel agencies.",
     tags: [
       {
-        name: "nextjs",
-        color: "blue-text-gradient",
+        name: "html",
       },
       {
-        name: "supabase",
-        color: "green-text-gradient",
+        name: "scss",
       },
       {
-        name: "css",
-        color: "pink-text-gradient",
+        name: "javascript",
       },
     ],
     image: inditours,
@@ -345,16 +312,13 @@ const projects = [
     type: "a frontend website for travel agencies.",
     tags: [
       {
-        name: "nextjs",
-        color: "blue-text-gradient",
+        name: "html",
       },
       {
-        name: "supabase",
-        color: "green-text-gradient",
+        name: "scss",
       },
       {
-        name: "css",
-        color: "pink-text-gradient",
+        name: "javascript",
       },
     ],
     image: traveller,
