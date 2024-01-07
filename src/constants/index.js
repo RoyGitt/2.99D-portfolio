@@ -14,6 +14,8 @@ import {
   traveller,
   nike,
   port,
+  blogify,
+  asylum,
 } from "../assets";
 
 export const navLinks = [
@@ -145,6 +147,52 @@ const experiences = [
 
 const projects = [
   {
+    name: "Asylum",
+    description:
+      "Asylum is a robust real estate platform developed using the MERN stack. Seamlessly search and explore properties with a user-friendly interface.",
+    type: "a MERN stack real estate website",
+    tags: [
+      {
+        name: "react-js",
+      },
+      {
+        name: "MERN-stack",
+      },
+      {
+        name: "mongodb",
+      },
+      {
+        name: "mongoose",
+      },
+    ],
+    image: asylum,
+    sourceCode: "https://github.com/RoyGitt/healthian",
+    link: "https://hilarious-monstera-4b5820.netlify.app",
+  },
+  {
+    name: "Blogify",
+    description:
+      "Blogify is a weblog built with Next 14 and Next Auth v5, server actions.Route protection using Next Auth.",
+    type: "a fullstack blog website",
+    tags: [
+      {
+        name: "next-14",
+      },
+      {
+        name: "next-auth-v5",
+      },
+      {
+        name: "mongodb",
+      },
+      {
+        name: "mongoose",
+      },
+    ],
+    image: blogify,
+    sourceCode: "https://github.com/RoyGitt/blogify",
+    link: "https://blogify-lao6.vercel.app/",
+  },
+  {
     name: "Share Buzz",
     type: "a social media webapp",
     description:
@@ -164,6 +212,7 @@ const projects = [
     sourceCode: "https://github.com/RoyGitt/sharebuzz",
     link: "https://sharebuzz.netlify.app",
   },
+
   {
     name: "Portfolio",
     type: "a fancy portfolio",
@@ -265,26 +314,7 @@ const projects = [
     image: truos,
     link: "https://regal-licorice-6c492e.netlify.app/",
   },
-  {
-    name: "Healthian",
-    description:
-      "Experience culinary delight with a visually enticing yet simple frontend website, showcasing delectable dishes of your restaurant.",
-    type: "a frontend website for restaurateurs.",
-    tags: [
-      {
-        name: "html",
-      },
-      {
-        name: "css",
-      },
-      {
-        name: "javascript",
-      },
-    ],
-    image: healthian,
-    sourceCode: "https://github.com/RoyGitt/healthian",
-    link: "https://hilarious-monstera-4b5820.netlify.app",
-  },
+
   {
     name: "Inditours",
     description:
@@ -304,26 +334,6 @@ const projects = [
     image: inditours,
     sourceCode: "https://github.com/RoyGitt/Inditours",
     link: "https://silly-biscuit-0bfef6.netlify.app",
-  },
-  {
-    name: "Traveller",
-    description:
-      "Engaging and user-friendly travel agency website offering seamless navigation, stunning visuals, personalized itineraries, and secure online booking services.",
-    type: "a frontend website for travel agencies.",
-    tags: [
-      {
-        name: "html",
-      },
-      {
-        name: "scss",
-      },
-      {
-        name: "javascript",
-      },
-    ],
-    image: traveller,
-    sourceCode: "https://github.com/RoyGitt/traveller",
-    link: "https://cool-fenglisu-b69614.netlify.app/",
   },
 ];
 

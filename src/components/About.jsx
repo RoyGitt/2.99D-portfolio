@@ -86,14 +86,8 @@ const About = () => {
         className="mt-4 text-secondary text-[24px] max-w-[1440px] leading-[40px] 
       "
       >
-        Hey, I'm Arannyak Roy, I have de­veloped expe­rtise in creating
-        compelling and inte­ractive web applications using React and Ne­xt.js.
-        Through my experience­s, I have refined my skills to build imme­rsive
-        user expe­riences that captivate use­rs and deliver results. With my
-        expertise­, I confidently ensure custome­r satisfaction and leave an
-        indelible­ I am see­king a dynamic and collaborative work environment
-        that value­s speed and efficie­ncy. My goal is to contribute my skills
-        and expertise­ to drive success in the te­am.
+        Hey, I'm Arannyak Roy, I was a Frontend Developer recently transitioned
+        to MERN stack. Learning and upskilling everyday.
       </motion.p>
       <motion.div
         className="flex flex-wrap gap-10 mt-20"

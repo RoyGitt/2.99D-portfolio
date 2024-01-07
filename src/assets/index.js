@@ -31,6 +31,8 @@ import inditours from "./projects/inditours.png";
 import traveller from "./projects/traveller.png";
 import port from "./projects/port.png";
 import nike from "./projects/nike.png";
+import blogify from "./projects/blogify.png";
+import asylum from "./projects/asylum.png";
 
 import planets from "./planets.png";
 import mountains from "./mountains.png";
@@ -68,4 +70,6 @@ export {
   traveller,
   port,
   nike,
+  blogify,
+  asylum,
 };
