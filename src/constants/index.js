@@ -166,8 +166,8 @@ const projects = [
       },
     ],
     image: asylum,
-    sourceCode: "https://github.com/RoyGitt/healthian",
-    link: "https://hilarious-monstera-4b5820.netlify.app",
+    sourceCode: "https://github.com/RoyGitt/asylum",
+    link: "https://asylum-estate.onrender.com/",
   },
   {
     name: "Blogify",
