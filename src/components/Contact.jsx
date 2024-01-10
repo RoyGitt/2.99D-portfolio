@@ -136,7 +136,7 @@ const Contact = () => {
         <ul className="flex sm:flex-col flex-row justify-between gap-10">
           <motion.li whileHover={{ rotate: "360deg", scale: 1.1 }}>
             <a
-              href="https://github.com/"
+              href="https://github.com/RoyGitt"
               target="_blank"
               className="text-[3rem]"
             >
